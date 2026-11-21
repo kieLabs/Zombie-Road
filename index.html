@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="theme-color" content="#101a18"><meta name="description" content="Zombie Road: Last Escape — GamerKie Edition. Drive through the dead. Fight for the living.">
+<title>Zombie Road: Last Escape — GamerKie</title><link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+<div id="app">
+<header class="topbar"><div class="brand"><span class="brand-mark">G</span><span>GAMER<span>KIE</span></span></div><div class="game-name">ZOMBIE ROAD <small>LAST ESCAPE</small></div><div class="wallet">¢ <b id="money">0</b></div></header>
+<main>
+<section id="menu" class="screen active">
+<div class="hero"><p class="eyebrow">GAMERKIE ORIGINAL • APOCALYPSE SURVIVAL</p><h1>ZOMBIE ROAD:<br><em>LAST ESCAPE</em></h1><p class="tagline">DRIVE THROUGH THE DEAD. FIGHT FOR THE LIVING.</p>
+<div class="menu-actions"><button id="playBtn" class="primary">START DRIVING</button><button id="garageBtn">GARAGE & UPGRADES</button></div>
+<div class="menu-note">A side-scrolling survival driving game. Build your ride, push farther, survive longer.</div></div>
+</section>
+<section id="garage" class="screen"><div class="panel"><div class="panel-head"><div><p class="eyebrow">WORKSHOP</p><h2>YOUR GARAGE</h2></div><button class="ghost" data-screen="menu">BACK</button></div>
+<div id="vehicleInfo" class="vehicle-card"></div><div id="upgradeList" class="upgrade-list"></div></div></section>
+<section id="gameScreen" class="screen"><div class="game-wrap"><canvas id="game" aria-label="Zombie Road gameplay"></canvas>
+<div class="hud"><div class="hud-left"><span>DISTANCE <b id="distance">0 m</b></span><span>SPEED <b id="speed">0 km/h</b></span><span>RUN ¢ <b id="runMoney">0</b></span></div><div class="hud-right"><span class="fuel-label">FUEL <b id="fuelText">100%</b></span><div class="meter"><i id="fuelBar"></i></div><span>HULL <b id="hullText">100%</b></span><div class="meter hull"><i id="hullBar"></i></div><button id="pauseBtn" class="pause">Ⅱ</button></div></div>
+<div id="pauseOverlay" class="overlay"><div class="dialog"><h2>PAUSED</h2><button id="resumeBtn" class="primary">RESUME</button><button id="restartBtn">RESTART RUN</button><button data-screen="garage">GARAGE</button><button data-screen="menu">MAIN MENU</button></div></div>
+<div id="resultOverlay" class="overlay"><div class="dialog results"><p class="eyebrow">RUN COMPLETE</p><h2 id="resultTitle">OUT OF FUEL</h2><div id="resultStats"></div><button id="retryBtn" class="primary">DRIVE AGAIN</button><button data-screen="garage">UPGRADE VEHICLE</button><button data-screen="menu">MAIN MENU</button></div></div>
+<div class="touch-controls"><button id="brakeBtn" aria-label="Brake and reverse">◀</button><button id="boostBtn" aria-label="Boost">BOOST</button><button id="accelerateBtn" aria-label="Accelerate">▶</button></div>
+</div><div class="help-line">KEYBOARD: A / ← BRAKE & REVERSE • D / → ACCELERATE • SPACE BOOST • ESC PAUSE</div></section>
+</main><footer>© 2026 GAMERKIE • ORIGINAL GAME CONCEPT</footer></div>
+<script type="module" src="./src/main.js"></script>
+</body></html>

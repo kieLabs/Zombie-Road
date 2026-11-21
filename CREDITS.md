@@ -1,0 +1,1 @@
+All visuals in this prototype are drawn procedurally with Canvas/CSS and emoji UI glyphs. No third-party game artwork or audio is bundled. Replace/add assets only with original or properly licensed material.
